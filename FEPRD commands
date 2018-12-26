@@ -1,0 +1,22 @@
+//nanobox commands//
+Nanobox run..
+		nanobox remote add paperapp 
+		nanobox console web.main
+		nanobox console worker.rq
+
+Documents extract and etc:        
+        python manage.py import_xml --cin cinnumber --financials true &
+        python manage.py import_xml --cin cinnumber --extract true & 
+        python manage.py import_xml --cin cinnumber --parse true &
+        python manage.py import_xml --cin cinnumber --rename true &  
+        python manage.py import_xml --cin cinnumber --dates true & 
+
+        disown -h %1
+
+
+git update:
+		git stash
+		git pull
+
+in ubuntu after update aws key in environment settings do this
+		source /etc/environment
