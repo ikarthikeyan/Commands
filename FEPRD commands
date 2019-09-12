@@ -1,3 +1,8 @@
+//Director data commands in Mac//
+//run Docker//
+cd DownloaderBaseImage
+docker-compose run restore
+------------------------------------------------------------------------------------
 //nanobox commands//
 Nanobox run..
 		nanobox remote add paperapp 
@@ -12,7 +17,7 @@ Documents extract and etc:
         python manage.py import_xml --cin cinnumber --dates true & 
 
         disown -h %1
-
+------------------------------------------------------------------------------------
 
 git update:
 		git stash
@@ -20,3 +25,4 @@ git update:
 
 in ubuntu after update aws key in environment settings do this
 		source /etc/environment
+--------------------------------------------------------------------------------
