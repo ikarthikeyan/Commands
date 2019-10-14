@@ -9,14 +9,24 @@ Nanobox run..
 		nanobox console web.main
 		nanobox console worker.rq
 
-Documents extract and etc:        
-        python manage.py import_xml --cin cinnumber --financials true &
-        python manage.py import_xml --cin cinnumber --extract true & 
-        python manage.py import_xml --cin cinnumber --parse true &
-        python manage.py import_xml --cin cinnumber --rename true &  
-        python manage.py import_xml --cin cinnumber --dates true & 
+FEPRD commands:        
+F
+heroku run --app papervc python manage.py import_xml --cin (cinnumber) --financials true
 
-        disown -h %1
+E
+heroku run --app papervc python manage.py import_xml --cin (cin number) --extract True
+
+P
+heroku run --app papervc python manage.py import_xml --cin (cin number) --parse True
+
+R
+heroku run --app papervc python manage.py import_xml --cin (cinnumber) --rename true
+
+D
+heroku run --app papervc python manage.py import_xml --cin (cinnumber) --dates true
+
+
+disown -h %1
 ------------------------------------------------------------------------------------
 
 git update:
